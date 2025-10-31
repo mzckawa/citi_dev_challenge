@@ -56,13 +56,15 @@ section{
 header{
     position: fixed;
     top:0;left:0; right:0;
-    background: #fff;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255,255,255,0)), url(fundo_oie.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 2rem 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    
 
 }
 
@@ -259,6 +261,12 @@ header .fa-bars{
 
 }
 
+#paixoes{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255,255,255,0)), url(fundo_oie.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .paixoes .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -321,13 +329,18 @@ header .fa-bars{
 
 }
 
-.review .box-container{
+#recomendacoes{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255,255,255,0)), url(fundo_oie.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.recomendacoes .box-container{
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;   
 }
 
-.review .box-container .box{
+.recomendacoes .box-container .box{
     flex: 1 1 30rem;
     box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
     border-radius: .5rem;
@@ -335,49 +348,49 @@ header .fa-bars{
     position: relative; 
 }
 
-.review .box-container .box .fa-quote-right{
+.recomendacoes .box-container .box .fa-quote-right{
     position: absolute;
     bottom:3rem; right: 3rem;
     font-size: 6rem;
     color:#eee;  
 }
 
-.review .box-container .box .stars i{
+.recomendacoes .box-container .box .stars i{
     color:var(--pink);
     font-size: 2rem;  
 }
 
-.review .box-container .box p{
-    color:#999;
+.recomendacoes .box-container .box .user-info p{
+    color:#333;
     font-size: 1.5rem;  
     line-height: 1.5;
-    padding-top: 2rem;
-
+    padding-top: 1.5rem;
+    text-align: justify;
 }
 
-.review .box-container .box .user{
+.recomendacoes .box-container .box .user{
     display: flex;
     align-items: center;
     padding-top: 2rem;
 
 }
 
-.review .box-container .box .user img{
-    height:6rem;
-    width:6rem;
-    border-radius: 50%;
+.recomendacoes .box-container .box .user img{
+    height:35rem;
+    width:25rem;
+    border-radius: 1rem;
     object-fit: cover;
     margin-right: 1rem;
 }
 
-.review .box-container .box .user h3{
+.recomendacoes .box-container .box .user h3{
     font-size:2rem;
     color:#333;
 }
 
-.review .box-container .box .user span{
+.recomendacoes .box-container .box .user span{
     font-size:1.5rem;
-    color:#999;
+    color:#333;
 }
 
 .footer .box-containter{

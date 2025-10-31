@@ -56,7 +56,7 @@ section{
 header{
     position: fixed;
     top:0;left:0; right:0;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255,255,255,0)), url(fundo_oie.jpg);
+    background-image: url(assets/fundo_oie.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2rem 9%;
@@ -117,7 +117,7 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background:url(fundo_oie.jpg) no-repeat; 
+    background:url(assets/fundo_oie.jpg) no-repeat; 
     background-size: cover;
     background-position: center;
 }
@@ -199,14 +199,14 @@ header .fa-bars{
 
 #porqueociti {
 
-    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255,255,255,0)), url(fundo_oie.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255,255,255,0)), url(assets/fundo_oie.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .icons-container{
 
-    background-image: url(fundo_oie.jpg);
+    background-image: url(assets/fundo_oie.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -262,7 +262,7 @@ header .fa-bars{
 }
 
 #paixoes{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255,255,255,0)), url(fundo_oie.jpg);
+    background-image: url(assets/fundo_oie.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -325,12 +325,12 @@ header .fa-bars{
 }
 
 .paixoes .box-container .box .image .icons a:hover{
-    background:#333;
+    background:var(--pink);
 
 }
 
 #recomendacoes{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255,255,255,0)), url(fundo_oie.jpg);
+    background-image: url(assets/fundo_oie.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -393,41 +393,47 @@ header .fa-bars{
     color:#333;
 }
 
-.footer .box-containter{
+.footer{
+    background-image: url(assets/fundo_oie.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer .box-container{
     display:flex;
     flex-wrap: wrap;
     gap:1.5rem;
 }
 
-.footer .box-containter .box{
+.footer .box-container .box{
     flex: 1 1 25rem;
 }
 
-.footer .box-containter .box h3{
+.footer .box-container .box h3{
     color:#333;
     font-size: 2.5rem;
     padding:1rem 0;
 }
 
-.footer .box-containter .box h3{
+.footer .box-container .box h3{
     color:#333;
     font-size: 2.5rem;
     padding:1rem 0;
 }
 
-.footer .box-containter .box a{
+.footer .box-container .box a{
     display: block;
     color:#666;
     font-size: 1.5rem;
     padding:1rem 0;
 }
 
-.footer .box-containter .box a:hover{
+.footer .box-container .box a:hover{
     color:var(--pink);
     text-decoration: underline;
 }
 
-.footer .box-containter .box img{
+.footer .box-container .box img{
     margin-top: 1rem;
 }
 
@@ -443,6 +449,14 @@ header .fa-bars{
 
 .footer .credit span{
     color:var(--pink);
+}
+
+.footer .credit a{
+    color:var(--pink);
+}
+
+.footer .credit a:hover{
+    text-decoration: underline;
 }
 
 .oie .content p{
@@ -494,6 +508,67 @@ header .fa-bars{
         background-position: left;
     }
 
+}
+
+.bio {
+    background: url(assets/fundo_oie.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.bio-box {
+    flex: 1 1 30rem;
+    max-width: 35rem; 
+    display: block; 
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    background: rgba(255,255,255,.1);
+    overflow: hidden; 
+    text-align: center;
+    position: relative;
+}
+
+.bio-box img {
+    width: 100%;
+    height: 30rem; 
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+
+.bio-title {
+    position: absolute;
+    bottom: -7rem; 
+    left: 0;
+    right: 0;
+}
+
+.bio-box:hover .bio-title {
+    bottom: 0;
+}
+
+.bio-title h3 {
+    
+    background: var(--pink);
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem; 
+    width: 100%;
+    margin: 0; 
+}
+
+.bio-title h3:hover {
+    background: var(--pink);
 }
 
 @media (max-width:768px){

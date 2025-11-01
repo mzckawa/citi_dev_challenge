@@ -122,10 +122,6 @@ header .fa-bars{
     background-position: center;
 }
 
-.oie .content{
-    max-width: 50rem;
-}
-
 .oie .content h3{
     font-size: 6rem;
     color:#333;
@@ -483,12 +479,25 @@ header .fa-bars{
     flex: 1 1 30rem;
 }
 
-.oie .row .video-container video{
-    width: 90%;
+.oie .row .video-container {
+    position: relative;
+    padding-top: 56.25%;
+    height: 0;
+    overflow: hidden;
     border-radius: 0.9rem;
     border: 0.7rem solid #fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
+
+.oie .row .video-container iframe {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 @media(max-width:991px){
 
@@ -629,7 +638,83 @@ header .fa-bars{
     }
 }
 
+.pagina-conteudo {
+            background: #fff;
+            line-height: 1.7;
+            padding-top: 8rem; 
+        }
+
+        .pagina-conteudo .content {
+            max-width: 80rem; 
+            margin: 0 auto; 
+            text-align: justify;
+        }
+
+        .pagina-conteudo .content img {
+            width: 100%;
+            border-radius: .5rem;
+            margin: 2rem 0;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        }
+
+        .pagina-conteudo .content p {
+            font-size: 1.7rem; 
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+.pagina-conteudo {
+    
+    min-height: 100vh;
+    padding-top: 8rem; 
+    padding-bottom: 4rem; 
+    background: url(assets/fundo_oie.jpg) no-repeat center center/cover;
+    line-height: 1.7;
+}
 
 
+.pagina-conteudo .content {
+    background: rgba(255, 255, 255, .3); 
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    padding: 3rem; 
+    max-width: 90rem;
+    margin: 0 auto; 
+    text-align: justify;
+}
+
+
+.pagina-conteudo .content .row {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.pagina-conteudo .content .row .image-container {
+    flex: 1 1 60rem; 
+}
+
+
+.pagina-conteudo .content .row .text-container {
+    flex: 1 1 25rem; 
+}
+
+.pagina-conteudo .content img {
+    width: 100%;
+    border-radius: .5rem;
+    margin: 0; 
+}
+
+.pagina-conteudo .content p {
+    font-size: 1.7rem; 
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.pagina-conteudo .content p:last-child {
+    margin-bottom: 0;
+}
 
 
